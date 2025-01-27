@@ -1,63 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
   {% load static %}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>سایت رحیم شعرا</title>
+  <meta name="description" content="سایت رسمی رحیم شعرا - محلی برای دوستداران شعر و ادبیات فارسی">
+  <title>سایت رسمی رحیم شعرا | دریچه‌ای به دنیای شعر</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
-    <a class="navbar-brand" href="#">سایت رحیم شعرا</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <a class="navbar-brand font-weight-bold" href="#">رحیم شعرا</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">صفحه اصلی <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">صفحه اصلی <span class="sr-only">(کنونی)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">امکانات</a>
+          <a class="nav-link" href="#">گالری اشعار</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">درباره ما</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">تماس با ما</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <div class="container mt-5">
-    <div class="jumbotron text-center p-4 shadow-lg rounded">
-      <h1 class="display-4 text-dark">خوش آمدید به سایت رحیم شعرا!</h1>
-      <p class="lead text-muted">
-        این یک نمونه ساده و زیبا از یک صفحه بوت استرپ با خوشنویسی فارسی است.
-      </p>
-      <hr class="my-4">
-      <p>
-        از این قالب برای ساخت وب‌سایت شعر خود استفاده کنید و هنر خود را به دنیا نشان دهید.
-      </p>
-    </div>
+  <header class="jumbotron text-center bg-light text-dark shadow-lg rounded p-5">
+    <h1 class="display-4 font-weight-bold">به دنیای زیبای شعر خوش آمدید</h1>
+    <p class="lead text-muted">محلی برای انتشار و مطالعه اشعار ناب و دلنشین</p>
+    <hr class="my-4">
+    <a class="btn btn-primary btn-lg" href="#" role="button">بیشتر بخوانید</a>
+  </header>
 
-    <form>
-      <div class="form-group">
-        <label for="name">نام</label>
-        <input type="text" class="form-control" id="name" placeholder="نام خود را وارد کنید">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <form class="bg-white p-4 rounded shadow">
+          <h4 class="text-center mb-4">با ما در ارتباط باشید</h4>
+          <div class="form-group">
+            <label for="name">نام</label>
+            <input type="text" class="form-control" id="name" placeholder="نام خود را وارد کنید">
+          </div>
+          <div class="form-group">
+            <label for="email">ایمیل</label>
+            <input type="email" class="form-control" id="email" placeholder="ایمیل خود را وارد کنید">
+          </div>
+          <div class="form-group">
+            <label for="message">پیام</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="پیام خود را بنویسید"></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark btn-block">ارسال پیام</button>
+        </form>
       </div>
-      <div class="form-group">
-        <label for="email">ایمیل</label>
-        <input type="email" class="form-control" id="email" placeholder="ایمیل خود را وارد کنید">
-      </div>
-      <div class="form-group">
-        <label for="message">پیام</label>
-        <textarea class="form-control" id="message" rows="3"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary btn-block">ارسال</button>
-    </form>
+    </div>
   </div>
+
+  <footer class="bg-dark text-white text-center p-3 mt-5">
+    <p class="mb-0">&copy; 2025 تمامی حقوق محفوظ است | طراحی توسط تیم رحیم شعرا</p>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
