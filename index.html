@@ -4,11 +4,21 @@
   {% load static %}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="سایت رسمی رحیم شعرا - محلی برای دوستداران شعر و ادبیات فارسی">
-  <title>سایت رسمی رحیم شعرا | دریچه‌ای به دنیای شعر</title>
+  <meta name="description" content="سایت رسمی رحیم شعرا - محلی برای دوستداران برنامه‌نویسی و تکنولوژی">
+  <title>سایت رحیم شعرا | آموزش برنامه‌نویسی</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  <style>
+    .social-icons a {
+      color: #fff;
+      margin: 0 10px;
+      transition: transform 0.3s;
+    }
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
@@ -22,7 +32,7 @@
           <a class="nav-link" href="#">صفحه اصلی <span class="sr-only">(کنونی)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">گالری اشعار</a>
+          <a class="nav-link" href="#">آموزش برنامه‌نویسی</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">درباره ما</a>
@@ -35,10 +45,15 @@
   </nav>
 
   <header class="jumbotron text-center bg-light text-dark shadow-lg rounded p-5">
-    <h1 class="display-4 font-weight-bold">به دنیای زیبای شعر خوش آمدید</h1>
-    <p class="lead text-muted">محلی برای انتشار و مطالعه اشعار ناب و دلنشین</p>
+    <h1 class="display-4 font-weight-bold">به سایت رحیم شعرا خوش آمدید</h1>
+    <p class="lead text-muted">من آرین هستم و این سایت رو طراحی کردم کانال تلگرامم این است: <a href="https://t.me/ariansho">ariansho</a></p>
     <hr class="my-4">
-    <a class="btn btn-primary btn-lg" href="#" role="button">بیشتر بخوانید</a>
+    <p class="lead text-muted">این سایت آزمایشی است برای کار بر روی پروژه ای بزرگ تر</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/arian__sho2" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="https://t.me/ariansho" target="_blank"><i class="fab fa-telegram fa-2x"></i></a>
+      <a href="mailto:arian311380@gmail.com" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
+    </div>
   </header>
 
   <div class="container mt-5">
