@@ -1,0 +1,2 @@
+# rahim/requirements.txt
+Django>=3.2,<4.0
